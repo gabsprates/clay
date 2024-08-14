@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {render} from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import '@clayui/css/lib/css/atlas.css';
 
 function App() {
@@ -12,4 +12,4 @@ function App() {
 }
 
 const rootElement = document.getElementById('root');
-render(<App />, rootElement);
+createRoot(rootElement).render(<App />);

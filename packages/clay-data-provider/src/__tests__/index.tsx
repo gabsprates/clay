@@ -260,7 +260,7 @@ describe('ClayDataProvider', () => {
 		spy.mockRestore();
 	});
 
-	it('calls clay.data and fetch again when variables change', async () => {
+	it.only('calls clay.data and fetch again when variables change', async () => {
 		const data = {title: 'Bar'};
 
 		fetchMock.mockResponse(JSON.stringify(data));

@@ -53,6 +53,8 @@ const ClayDataProvider = ({
 	 * is enabled, this will inform of the fetch status and cause
 	 * a new rendering.
 	 */
+	console.log(otherProps);
+
 	const [state, setState] = React.useState<IState>(() => ({
 		error: false,
 		loading: false,
